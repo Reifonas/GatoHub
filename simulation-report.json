@@ -1,0 +1,115 @@
+{
+  "steps": [
+    {
+      "step": 1,
+      "name": "Verificação de configuração",
+      "status": "success",
+      "data": {
+        "repo": {
+          "id": "1758981377371",
+          "github_repo_id": "test-repo-123",
+          "name": "test-repo",
+          "local_path": "C:\\Users\\Marcos\\Documents\\GitHub\\GITHUB_TRACK",
+          "sync_enabled": true,
+          "created_at": "2025-09-27T13:56:17.371Z"
+        },
+        "lastSync": {
+          "id": "1758981458720",
+          "repository_id": "1758981377371",
+          "operation_name": "Test Push After Git Init",
+          "sync_type": "push",
+          "source_path": "C:\\Users\\Marcos\\Documents\\GitHub\\GITHUB_TRACK",
+          "status": "failed",
+          "options": {
+            "commitMessage": "Test push with initialized git repo"
+          },
+          "created_at": "2025-09-27T13:57:38.720Z",
+          "started_at": "2025-09-27T13:57:38.722Z",
+          "error_message": "Erro no push: Command failed: git push origin main\nfatal: 'origin' does not appear to be a git repository\nfatal: Could not read from remote repository.\n\nPlease make sure you have the correct access rights\nand the repository exists.\n",
+          "completed_at": "2025-09-27T13:57:38.953Z"
+        }
+      }
+    },
+    {
+      "step": 2,
+      "name": "Verificação Git",
+      "status": "success",
+      "wasGitRepo": true
+    },
+    {
+      "step": 3,
+      "name": "Configuração Git",
+      "status": "success",
+      "userName": "Reifonas",
+      "userEmail": "m.reifonas@gmail.com"
+    },
+    {
+      "step": 4,
+      "name": "Configuração Remote",
+      "status": "success",
+      "remotes": "origin\thttps://github.com/Reifonas/test-repo.git (fetch)\norigin\thttps://github.com/Reifonas/test-repo.git (push)"
+    },
+    {
+      "step": 5,
+      "name": "Análise de arquivos",
+      "status": "success",
+      "fileCount": 83,
+      "sampleFiles": [
+        {
+          "path": ".gitignore",
+          "size": 258,
+          "modified": "2025-08-13T23:08:59.051Z"
+        },
+        {
+          "path": "api\\app.ts",
+          "size": 1198,
+          "modified": "2025-09-24T11:49:45.619Z"
+        },
+        {
+          "path": "api\\index.ts",
+          "size": 293,
+          "modified": "2025-08-13T23:08:59.125Z"
+        },
+        {
+          "path": "api\\middleware\\auth.js",
+          "size": 8309,
+          "modified": "2025-09-26T10:16:50.205Z"
+        },
+        {
+          "path": "api\\routes\\auth.js",
+          "size": 11291,
+          "modified": "2025-09-27T13:53:14.704Z"
+        }
+      ]
+    },
+    {
+      "step": 6,
+      "name": "Status Git",
+      "status": "success",
+      "changes": 20
+    },
+    {
+      "step": 7,
+      "name": "Git Add e Commit",
+      "status": "success",
+      "message": "Test push with initialized git repo"
+    },
+    {
+      "step": 8,
+      "name": "Verificação de autenticação",
+      "status": "warning",
+      "issue": "Token não encontrado"
+    },
+    {
+      "step": 9,
+      "name": "Push para GitHub",
+      "status": "error",
+      "error": "Command failed: git push origin main\nremote: Repository not found.\nfatal: repository 'https://github.com/Reifonas/test-repo.git/' not found\n"
+    }
+  ],
+  "errors": [
+    "Push falhou: Command failed: git push origin main\nremote: Repository not found.\nfatal: repository 'https://github.com/Reifonas/test-repo.git/' not found\n"
+  ],
+  "warnings": [],
+  "success": false
+}
