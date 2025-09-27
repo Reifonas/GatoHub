@@ -451,7 +451,7 @@ async function performPush(operationId, octokit, operation, repository, repoPath
     await logSyncMessage(operationId, 'info', `Configurando credenciais para usuário: ${githubUsername}`)
 
     // Configure git credentials with GitHub token
-    const [owner, repoName] = repository.name.split('/')
+    const [owner, repoName] = repository.github_repo_id.split('/')
     const remoteUrl = `https://${githubToken}@github.com/${owner}/${repoName}.git`
     
     // Verify repository path exists and is a git repository
